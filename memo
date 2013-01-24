@@ -1,0 +1,36 @@
+// テストの実施
+
+php \
+-d include_path=\
+.:/usr/share/pear:/usr/share/php:\
+./phpunit3.5_suite/dbunit:\
+./phpunit3.5_suite/php-code-coverage:\
+./phpunit3.5_suite/php-file-iterator:\
+./phpunit3.5_suite/php-text-template:\
+./phpunit3.5_suite/php-timer:\
+./phpunit3.5_suite/php-token-stream:\
+./phpunit3.5_suite/phpunit:\
+./phpunit3.5_suite/phpunit-mock-objects:\
+./phpunit3.5_suite/phpunit-selenium:\
+./phpunit3.5_suite/phpunit-story:\
+./phpunit3.5_suite/php-invoker \
+./phpunit3.5_suite/phpunit/phpunit.php utility/UtilTest
+
+
+// テストクラスの作成 ※Util.phpの場合->UtilTest.phpが作成される。
+php \
+-d include_path=\
+.:/usr/share/pear:/usr/share/php:\
+./phpunit3.5_suite/dbunit:\
+./phpunit3.5_suite/php-code-coverage:\
+./phpunit3.5_suite/php-file-iterator:\
+./phpunit3.5_suite/php-text-template:\
+./phpunit3.5_suite/php-timer:\
+./phpunit3.5_suite/php-token-stream:\
+./phpunit3.5_suite/phpunit:\
+./phpunit3.5_suite/phpunit-mock-objects:\
+./phpunit3.5_suite/phpunit-selenium:\
+./phpunit3.5_suite/phpunit-story:\
+./phpunit3.5_suite/php-invoker \
+./phpunit3.5_suite/phpunit/phpunit.php --skeleton-test Util
+
