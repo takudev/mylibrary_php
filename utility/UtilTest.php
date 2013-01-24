@@ -144,6 +144,8 @@ class UtilTest extends PHPUnit_Framework_TestCase
 		// 実行
 		$result_array = Util::convertCsvStringToArray($temp_file);
 
+                unlink($temp_file);
+
 		// 取得した要素数の確認
 		$this->assertEquals(count($result_array), 3);
 		foreach($result_array as $result_row){
