@@ -1,7 +1,0 @@
-// テストの実施
-phpunit --include-path src/utility Tests
-
-
-// テストクラスの作成 ※Util.phpの場合->UtilTest.phpが作成される。
-phpunit --skeleton-test Util
-
