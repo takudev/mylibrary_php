@@ -1,9 +1,7 @@
 <?php
 
-require_once 'PHPUnit/Autoload.php';
-require_once 'Util.php';
+require_once 'library/utility/Util.php';
 
-// require_once dirname(__FILE__).'/Util.php';
 
 /**
  * Test class for Util.

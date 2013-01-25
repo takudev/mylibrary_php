@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__).'/Pager.php';
+require_once 'library/pager/Pager.php';
 
 /**
  * Test class for Pager.
